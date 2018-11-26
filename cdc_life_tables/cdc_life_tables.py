@@ -98,7 +98,7 @@ groups = ['total', 'male', 'female',
           'white', 'wm', 'wf',
           'black', 'bm', 'bf', ]
 
-cdc_url = 'http://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/'
+cdc_url = 'https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/60_09/'
 lt_dir = 'data/'
 
 try:
