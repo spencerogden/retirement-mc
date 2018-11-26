@@ -2,5 +2,5 @@ matplotlib
 scipy
 pandas
 uncertainties
-urllib2
+urllib
 numpy
