@@ -183,7 +183,7 @@ def run_histories(starting_assets,
                                   run_out_of_money_hist.std()/np.sqrt(n_mc))
 
     if verbose:
-        print ' Chance of running out of money is {:%}'.format(run_out_of_money)
+        print(' Chance of running out of money is {:%}'.format(run_out_of_money))
 
     return run_out_of_money
 
@@ -399,7 +399,7 @@ def sensitivity_plots(
     fig.tight_layout()
 
     if verbose:
-        print ' You should save ${:.2f} million.'.format(base_save)
+        print(' You should save ${:.2f} million.'.format(base_save))
 
     #fig.savefig('figs/{}.pdf'.format('sensitivity-plots'))
 
