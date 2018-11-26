@@ -25,12 +25,12 @@ lines = ["-","--","-.",":"]
 linecycler = cycle(lines)
 
 from cdc_life_tables.cdc_life_tables import life_table
-import shiller
+import shiller.shiller
 
 # Historical financial data
-inflation = shiller.inflation.iloc[1:-1]
-stock_returns = shiller.stock_returns.iloc[1:-1]
-interest_rates = shiller.interest_rates.iloc[1:-1]
+inflation = shiller.shiller.inflation.iloc[1:-1]
+stock_returns = shiller.shiller.stock_returns.iloc[1:-1]
+interest_rates = shiller.shiller.interest_rates.iloc[1:-1]
 
 rand = np.random.random_sample
 
