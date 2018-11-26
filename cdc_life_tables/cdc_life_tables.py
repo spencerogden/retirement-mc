@@ -120,7 +120,7 @@ if n_life_table_csv_files != 426:
         state_url = cdc_url + 'lewk4_{}.xlsx'.format(s)
         res = requests.get(state_url,verify=False, stream=True)
      
-        xls = pd.read_excel(res.raw)
+        xls = pd.ExcelFile(res.raw)
         sheets = xls.sheet_names
         for sheet in xls.sheet_names:
             group = remove_digits(sheet)
