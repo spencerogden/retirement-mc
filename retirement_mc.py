@@ -24,7 +24,7 @@ from itertools import cycle
 lines = ["-","--","-.",":"]
 linecycler = cycle(lines)
 
-from cdc_life_tables import life_table
+from cdc_life_tables.cdc_life_tables import life_table
 import shiller
 
 # Historical financial data
