@@ -18,7 +18,7 @@ csv_file = os.path.join(mod_dir, 'shiller.csv')
 
 if not os.path.exists(csv_file):
     xls_url = 'http://www.econ.yale.edu/~shiller/data/chapt26.xlsx'
-    res = requests.get(xls_url,streaming=True)
+    res = requests.get(xls_url,stream=True)
 
     xls = pd.ExcelFile(res.raw)
     df = xls.parse('Data', skiprows=[0,1,3,4,5,6,7],
